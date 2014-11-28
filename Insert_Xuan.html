@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后台管理</title>
+<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="JavaScript/EveryForAjax.js"></script>
+<script type="text/javascript" src="JavaScript/InputProcessing.js"></script>
+<link href="css/NavigationBar.css" rel="stylesheet" type="text/css" />
+<link href="css/Table.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+	<div align="center">
+		<div class="container" >
+			<ul class="menu">
+				<li><a href="Index.html">主页</a></li>
+				<li><a href="#">查看数据</a>
+					<ul class="submenu">
+						<li><a href="Retrieval_Z.html">查看Zhen</a></li>
+						<li><a href="Retrieval_X.html">查看Xuan</a></li>
+						<li><a href="Retrieval_Myself.html">查看本地</a></li>
+					</ul></li>
+				<li class="active"><a href="#s2">管理数据(Xuan)</a>
+					<ul class="submenu">
+						<li><a href="Insert_Xuan.html">插入Xuan</a></li>
+						<li><a href="Update_Xuan.html">更新Xuan</a></li>
+						<li><a href="Delete_Xuan.html">删除Xuan</a></li>
+					</ul></li>
+				<li><a href="#">扩展功能</a>
+					<ul class="submenu">
+						<li><a href="#">A</a></li>
+						<li><a href="#">B</a></li>
+						<li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
+					</ul></li>
+				<li><a href="#">扩展</a>
+			</ul>
+		</div>
+        <div id="MainDiv" style="margin-top:100px;">
+<table id="mytable">
+<tr>
+<td>请输入数据</td>
+<tr>
+                  <td width="54">Name：
+                    <br></td>
+                  <td width="448"><input type="text" name="Name_Xuan" id="Name_Xuan" onkeyup="CheckImput()"></td>
+                </tr>
+                <tr>
+                  <td>Edition：                  </td>
+                  <td><input type="text" name="Editon_Xuan" id="Editon_Xuan"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="button" name="InsertBtn" id="InsertBtn" value="添加" onClick="run_ajaxToSetValue()"></td>
+                </tr>
+
+</tr>
+</table>
+</div>
+	</div>
+</body>
+</html>
